@@ -1,5 +1,5 @@
 import React from 'react';
-
+import GoogleSignIn from "./GoogleSignIn";
 export default function Header({ 
   onToggleMobileDrawer, 
   onToggleMobileSearch, 
@@ -26,7 +26,7 @@ export default function Header({
           </div>
         </a>
       </div>
-
+      
       {/* Desktop Search Bar */}
       <div className="flex-1 max-w-2xl mx-auto hidden sm:block">
         <div className="relative flex items-center">
@@ -56,9 +56,10 @@ export default function Header({
           <span className="hidden sm:inline">+ ភ្ជាប់ Shared Folder</span>
         </button>
 
-        <div className="w-9 h-9 rounded-full bg-blue-600 p-0.5 flex items-center justify-center font-bold text-xs text-white shadow">
+        {/* <div className="w-9 h-9 rounded-full bg-blue-600 p-0.5 flex items-center justify-center font-bold text-xs text-white shadow">
           GW
-        </div>
+        </div> */}
+        <GoogleSignIn />
       </div>
     </header>
   );
