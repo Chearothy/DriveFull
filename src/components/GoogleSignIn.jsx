@@ -1,7 +1,7 @@
 
 import React from "react";
 
-const API_URL = "https://localhost:7001";
+const API_URL = "http://localhost:5173";
 
 export default function GoogleSignIn() {
   const signIn = () => {
